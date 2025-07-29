@@ -133,7 +133,7 @@
                 <version>${testcontainers.version}</version>
             </dependency>
         </dependencies>
-    </dependencyManagement>e
+    </dependencyManagement>
 
     <build>
         <plugins>
