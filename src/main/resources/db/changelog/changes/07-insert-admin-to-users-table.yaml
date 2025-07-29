@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-admin
+      author: Denys Mazurenko
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column: {name: email, value: 'admin@mail.com'}
+              - column: {name: password, value: '$2a$10$4HD42qtSV4U17CapsojW5Ob/jqv9PvFxh.oJrJo37wM9dYVi..pCK'}

@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-index-articles-author-id-created-at
+      author: Denys Mazurenko
+      changes:
+        - createIndex:
+            tableName: articles
+            indexName: idx_articles_author_created
+            columns:
+              - column:
+                  name: author_id
+              - column:
+                  name: created_at
